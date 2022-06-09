@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Nunito", sans-serif;
+  background: #f5b0e9;
+  background: -webkit-gradient(linear, left top, right bottom, from(#f5b0e9), to(#d00fee));
+  background: linear-gradient(to bottom right, #f5b0e9, #d00fee);
+  color: #000;
+}
+
+.wrapper {
+  min-height: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0px auto;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+/*------------ Main --------------*/
+main {
+  padding: 60px 0;
+}
+
+main .calc__title {
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+main .calc__body {
+  width: 640px;
+  padding: 10px 0;
+  margin: 0 auto 40px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+}
+
+main .calc__body table {
+  margin: 0 auto;
+  width: 600px;
+}
+
+main .calc__body table th {
+  font-weight: bold;
+  padding: 10px 15px;
+}
+
+main .calc__body table td {
+  color: #70708f;
+  border-top: 1px solid #fff1fd;
+  padding: 10px 15px;
+}
+
+main .calc__body table td input {
+  text-align: center;
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+main .calc__body table td input[type="number"]::-webkit-outer-spin-button,
+main .calc__body table td input[type="number"]::-webkit-inner-spin-button {
+  display: none;
+}
+
+main .calc__body table tr:hover:not(:last-child) td {
+  background: #fff1fd;
+}
+
+main .calc__body table tr {
+  padding: 10px;
+}
+
+main .calc__body table .calc__result td,
+main .calc__body table th {
+  padding: 25px 0;
+}
+
+main .calc__body table .calc__result td .calc__result-print,
+main .calc__body table th .calc__result-print {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main .calc__sum {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 24px;
+}
+
+main .calc__sum button {
+  width: 180px;
+  margin-bottom: 40px;
+  height: 60px;
+  color: #000000;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-size: 24px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.5)), to(#f5b0e9));
+  background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.5), #f5b0e9);
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  -webkit-box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25), -2px 10px 20px rgba(0, 0, 0, 0.22), inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px 2px 4px rgba(0, 0, 0, 0.25), -2px 10px 20px rgba(0, 0, 0, 0.22), inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  transition: colorz 0.3s ease-in;
+  -webkit-transition: colorz 0.3s ease-in;
+  -moz-transition: colorz 0.3s ease-in;
+  -ms-transition: colorz 0.3s ease-in;
+  -o-transition: colorz 0.3s ease-in;
+}
+
+main .calc__sum button:hover {
+  -webkit-animation-name: colorz;
+          animation-name: colorz;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  background: -webkit-gradient(linear, left top, right bottom, from(#d00fee), to(#f5b0e9));
+  background: linear-gradient(to bottom right, #d00fee, #f5b0e9);
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes colorz {
+  from {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.5)), to(#f5b0e9));
+    background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.5), #f5b0e9);
+  }
+  25% {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.65)), to(#f5b0e9));
+    background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.65), #f5b0e9);
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.75)), to(#f5b0e9));
+    background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.75), #f5b0e9);
+  }
+  75% {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.85)), to(#f5b0e9));
+    background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.85), #f5b0e9);
+  }
+  to {
+    background: -webkit-gradient(linear, left top, right bottom, from(#d00fee), to(#f5b0e9));
+    background: linear-gradient(to bottom right, #d00fee, #f5b0e9);
+  }
+}
+
+@keyframes colorz {
+  from {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.5)), to(#f5b0e9));
+    background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.5), #f5b0e9);
+  }
+  25% {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.65)), to(#f5b0e9));
+    background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.65), #f5b0e9);
+  }
+  50% {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.75)), to(#f5b0e9));
+    background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.75), #f5b0e9);
+  }
+  75% {
+    background: -webkit-gradient(linear, left top, right bottom, from(rgba(208, 15, 238, 0.85)), to(#f5b0e9));
+    background: linear-gradient(to bottom right, rgba(208, 15, 238, 0.85), #f5b0e9);
+  }
+  to {
+    background: -webkit-gradient(linear, left top, right bottom, from(#d00fee), to(#f5b0e9));
+    background: linear-gradient(to bottom right, #d00fee, #f5b0e9);
+  }
+}
+
+main .calc__sum .calc__footer {
+  font-weight: bold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .calc__sum .calc__footer input {
+  width: 320px;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: transparent;
+  text-align: end;
+  padding-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
