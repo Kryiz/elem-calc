@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Калькулятор</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <main class="main">
+            <section class="container">
+                <h1 class="calc__title">Калькулятор</h1>
+                <div class="calc__body">
+                    <form action="#">
+                        <table>
+                            <tr class="calc__result">
+                                <th>Тип данных</th>
+                                <th>Кол-во</th>
+                            </tr>
+                            <tr>
+                                <td>Извещения</td>
+                                <td>
+                                    <label for="calcNotice"></label>
+                                    <input type="number" name="calcNotice" id="calcNotice" class="js-input" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Протоколы</td>
+                                <td>
+                                    <label for="calcProtocol"></label>
+                                    <input type="number" name="calcNotice" id="calcProtocol" class="js-input" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Контракты</td>
+                                <td>
+                                    <label for="calcContract"></label>
+                                    <input type="number" name="calcNotice" id="calcContract" class="js-input" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Документы</td>
+                                <td>
+                                    <label for="calcDocument"></label>
+                                    <input type="number" name="calcNotice" id="calcDocument" class="js-input" value="">
+                                </td>
+                            </tr>
+                            <tr class="calc__result">
+                                <td>Итог :</td>
+                                <td>
+                                    <input class="calc__result-print" id="js-sum" value="">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+                <div class="calc__sum">
+                    <button id="js-btn" class="calc-btn"><span>Рассчитать</span></button>
+                    <div class="calc__footer">
+                        <p>Сумма = </p><input class="calc-sum-print" id="js-result" value=""> р.
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
